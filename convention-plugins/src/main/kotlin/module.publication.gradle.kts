@@ -20,9 +20,11 @@ publishing {
 
         // Provide artifacts information required by Maven Central
         pom {
-            name.set("Kotlin Multiplatform library template")
-            description.set("Dummy library to test deployment to Maven Central")
-            url.set("https://github.com/Kotlin/multiplatform-library-template")
+            groupId = "com.jesusdmedinac.kmp.business.bubble"
+            version = "1.0.0"
+            name.set("Kotlin Multiplatform library for bubble business and data logic")
+            description.set("Kotlin Multiplatform library for bubble business and data logic")
+            url.set("https://github.com/jesusdmedinac/kmp-business-bubble")
 
             licenses {
                 license {
@@ -32,14 +34,16 @@ publishing {
             }
             developers {
                 developer {
-                    id.set("JetBrains")
-                    name.set("JetBrains Team")
-                    organization.set("JetBrains")
-                    organizationUrl.set("https://www.jetbrains.com")
+                    id.set("JesusDMedinaC")
+                    name.set("Jesús Daniel Medina Cruz")
+                    organization.set("JesusDMedinaC")
+                    organizationUrl.set("https://jesusdmedinac.com")
                 }
             }
             scm {
-                url.set("https://github.com/Kotlin/multiplatform-library-template")
+                groupId = "com.jesusdmedinac.kmp.business.bubble"
+                version = "1.0.0"
+                url.set("https://github.com/jesusdmedinac/kmp-business-bubble")
             }
         }
     }
