@@ -12,6 +12,8 @@ publishing {
     publications.withType<MavenPublication> {
         // Stub javadoc.jar artifact
         artifact(tasks.register("${name}JavadocJar", Jar::class) {
+            groupId = "com.jesusdmedinac.kmp.business.bubble"
+            version = "1.0.0"
             archiveClassifier.set("javadoc")
             archiveAppendix.set(this@withType.name)
         })

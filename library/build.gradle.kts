@@ -6,7 +6,6 @@ plugins {
 
 kotlin {
     targetHierarchy.default()
-    jvm()
     androidTarget {
         publishLibraryVariants("release")
         compilations.all {
@@ -18,7 +17,6 @@ kotlin {
     iosX64()
     iosArm64()
     iosSimulatorArm64()
-    linuxX64()
 
     sourceSets {
         val commonMain by getting {
@@ -35,7 +33,7 @@ kotlin {
 }
 
 android {
-    namespace = "org.jetbrains.kotlinx.multiplatform.library.template"
+    namespace = "com.jesusdmedinac.kmp.business.bubble"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
